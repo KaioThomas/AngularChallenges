@@ -1,0 +1,31 @@
+
+
+ <mat-form-field class="filterContainer">
+    <mat-label>{{filterMessage}}</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option (click)="reset()">None</mat-option>
+    <ng-container *ngFor="let color of colors">  
+      <mat-option class="capitalized" (click)="colorFilter()" value="{{ color }}">{{ color }}</mat-option>
+                  </ng-container>
+               </mat-select>
+          </mat-form-field>
+
+  <form class="example-form">
+      <mat-form-field>
+        <input type="text"
+               placeholder="Busca..."
+               matInput
+               class="capitalized"
+               id="searchInput"
+               (keyup)="sendFilter($event.target)"
+               [formControl]="myControl"
+               [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let color of colorsLight | async" [value]="color">
+            {{color}}
+                     </mat-option>
+              </mat-autocomplete>
+          </mat-form-field>
+          <i class="material-icons" (click)="search()">search</i>
+          <i class="material-icons" (click)="clear()">clear</i>
+        </form>

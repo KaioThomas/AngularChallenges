@@ -1,0 +1,22 @@
+<!-- Estão dentro da pasta "componentes".
+     Todos os componentes que são separados 
+     (não ocupam uma tela inteira)
+-->
+
+<mat-toolbar 
+class="header mat-elevation-z4" 
+(scroll)="onScroll()"
+[ngClass]="navBarFixed? 'fixed' : 'notFixed'"
+>
+       <span>
+           <a routerLink="/">
+               <img src="assets/img/logo.png" alt="logo">
+                      </a>
+                  </span>
+          <span class="title-group">
+               <a routerLink="{{ routeUrl }}">
+                  <i class="material-icons">{{ icon }}</i>
+                  <span [ngClass]="navBarFixed? 'hide' : ''">{{ title }}</span>
+               </a>
+       </span>
+</mat-toolbar>

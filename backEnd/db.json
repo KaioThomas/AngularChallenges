@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 12",
+      "price": 15000,
+      "color": "white"
+    },
+    {
+      "id": 2,
+      "name": "MacBook Pro",
+      "price": 80000,
+      "color": "white"
+    },
+    {
+      "id": 3,
+      "name": "AirPod Max",
+      "price": 5443,
+      "color": "black"
+    },
+    {
+      "name": "Air frayer",
+      "price": 39900,
+      "id": 4,
+      "color": "black and red"
+    },
+    {
+      "name": "Apple tv",
+      "price": "50011",
+      "id": 5,
+      "color": "gold"
+    },
+    {
+      "name": "Iphone 14",
+      "price": "14000",
+      "color": "Gray",
+      "id": 7
+    },
+    {
+      "name": "iphone 6",
+      "price": "6000",
+      "color": "cyan",
+      "id": 8
+    },
+    {
+      "name": "Ipad",
+      "price": "500",
+      "color": "yellow",
+      "id": 9
+    },
+    {
+      "name": "iphone 11",
+      "price": "12999",
+      "color": "black",
+      "id": 10
+    }
+  ]
+}

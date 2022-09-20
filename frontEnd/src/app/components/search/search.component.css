@@ -1,0 +1,24 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+mat-form-field {
+    width: 50%;
+}
+
+form i {
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px 0  gray;
+}
+
+input {
+    color: black;
+    font-size: 1rem;
+}
+
+.filterContainer {
+    margin-left: 100px;
+}
